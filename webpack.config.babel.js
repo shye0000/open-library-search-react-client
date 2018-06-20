@@ -237,13 +237,13 @@ const config = {
 			// },
 			meta: [
 				{
-					name: 'open-library-search-client',
-					content: 'open-library-search-client'
+					name: 'open-library-search-react-client',
+					content: 'open-library-search-react-client'
 				}
 			],
 			mobile: true,
 			lang: 'en',
-			title: 'open-library-search-client'
+			title: 'open-library-search-react-client'
 		}),
 		new HtmlWebpackHarddiskPlugin(),
 		...pluginsConfig

@@ -2,7 +2,7 @@ version: '3'
 services:
   react:
     build: .
-    container_name: open-library-search-client
+    container_name: open-library-search-react-client
     volumes:
       - ./:/app:rw
     ports:

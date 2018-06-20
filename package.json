@@ -1,13 +1,13 @@
 {
-  "name": "open-library-search-client",
+  "name": "open-library-search-react-client",
   "version": "1.0.0",
   "description": "",
   "browserslist": [
     "defaults",
     "last 10 versions"
   ],
-  "repository": "https://github.com/shye0000/open-library-search-client",
-  "homepage": "https://github.com/shye0000/open-library-search-client",
+  "repository": "https://github.com/shye0000/open-library-search-react-client",
+  "homepage": "https://github.com/shye0000/open-library-search-react-client",
   "scripts": {
     "test": "jest --colors",
     "test:watch": "npm test -- --watch",

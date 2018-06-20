@@ -1,11 +1,11 @@
-# open-library-search-client
+# open-library-search-react-client
 
 ### [ Project deployment with docker-compose ]
 
 ```
 docker-compose build
 docker-compose up -d
-docker exec -it open-library-search-client bash
+docker exec -it open-library-search-react-client bash
 ```
 
 ### [ Unit tests ]
