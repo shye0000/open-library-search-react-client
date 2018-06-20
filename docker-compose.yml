@@ -1,0 +1,11 @@
+version: '3'
+services:
+  react:
+    build: .
+    container_name: open-library-search-client
+    volumes:
+      - ./:/app:rw
+    ports:
+      - "6866:6866"
+      - "6686:6686"
+    tty: true
