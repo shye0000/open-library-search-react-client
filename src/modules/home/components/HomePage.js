@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Search from './Search';
+import Results from './Results';
+import classNames from 'classnames';
 import './HomePage.scss';
 
 export class HomePage extends React.Component {
@@ -10,7 +12,17 @@ export class HomePage extends React.Component {
 		console.log(searched, searching, searchSuccess, results);
 		return (
 			<div className="home">
-				<Search />
+				<div className={classNames('search-wrapper',{
+					searched: searched
+				})}>
+					<Search />
+				</div>
+				{
+					searched ?
+						<div className="results-wrapper">
+							<Results results={results}/>
+						</div> : null
+				}
 			</div>
 		);
 	}

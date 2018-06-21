@@ -1,4 +1,22 @@
 @import "../../../styles/vars";
+@import "../../../styles/colors";
 .home {
-
+  .search-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: $sm-padding $sm-padding 0 $sm-padding;
+    &.searched {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: none;
+      border-bottom: 1px solid $light-grey;
+    }
+  }
+  .results-wrapper {
+    padding: $sm-padding;
+  }
 }

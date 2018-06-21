@@ -1,20 +1,9 @@
 @import "../../../styles/colors";
 @import "../../../styles/vars";
 .search {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: $sm-padding $sm-padding 0 $sm-padding;
   .search-inner {
     display: flex;
-    flex-wrap: wrap;
-  }
-  &.searched {
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform: none;
-    border-bottom: 1px solid $light-grey;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }

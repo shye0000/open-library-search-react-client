@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import classNames from 'classnames';
 import Input from 'antd/lib/input';
 import Select from 'antd/lib/select';
 import Form from 'antd/lib/form';
@@ -26,10 +25,9 @@ export class Search extends React.Component {
 		const FormItem = Form.Item;
 		const { getFieldDecorator } = this.props.form;
 		const Option = Select.Option;
+		const size = searched ? undefined : 'large';
 		return <Form
-			className={classNames('search', {
-				searched: searched
-			})}
+			className="search"
 			onSubmit={this.handleSubmit}
 		>
 			<div className="search-inner">
@@ -38,7 +36,7 @@ export class Search extends React.Component {
 						rules: [{required: true, message: 'Field required' }],
 						initialValue: 'q'
 					})(
-						<Select size="large" style={{width: '100px'}} disabled={searching} >
+						<Select size={size} style={{width: '100px'}} disabled={searching} >
 							<Option value="q">All</Option>
 							<Option value="title">Title</Option>
 							<Option value="author">Author</Option>
@@ -49,12 +47,9 @@ export class Search extends React.Component {
 					{getFieldDecorator('searchValue', {
 						rules: [{required: true, message: 'Field required' }],
 					})(
-						<Input style={{width: '300px'}} size="large"  disabled={searching} />
+						<Input placeholder="Tape something ..." style={{width: '300px'}} size={size}  disabled={searching} />
 					)}
 				</FormItem>
-				<Button type="primary" size="large" htmlType="submit"  disabled={searching} >
-					Search
-				</Button>
 			</div>
 		</Form>;
 	}
