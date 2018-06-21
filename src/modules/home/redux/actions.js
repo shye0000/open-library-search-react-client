@@ -5,11 +5,14 @@ export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
 export const SEARCH_FAIL = 'SEARCH_FAIL';
 export const SEARCHED = 'SEARCHED';
 
-export const search = (params, page = 1) => {
+export const search = (params, page = 1, pageSize = 20) => {
 	return (dispatch) => {
 		dispatch(searched());
-		dispatch(searching(page, params));
-		let query = {page: page};
+		dispatch(searching(page, params, pageSize));
+		let query = {
+			page,
+			limit: pageSize,
+		};
 		if (params) {
 			query = {
 				...query,
@@ -33,10 +36,11 @@ const searched = () => {
 	};
 };
 
-const searching = (page, params) => {
+const searching = (page, params, pageSize) => {
 	return {
 		type: SEARCHING,
 		page,
+		pageSize,
 		params,
 	};
 };

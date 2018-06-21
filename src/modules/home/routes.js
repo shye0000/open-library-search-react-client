@@ -5,7 +5,7 @@ const HomePage = asyncRoute(
 		/* webpackChunkName: "homePage" */
 		'./components/HomePage'),
 	() => import(
-		/* webpackChunkName: "rootReducers" */
+		/* webpackChunkName: "searchReducers" */
 		'./redux/reducers')
 );
 

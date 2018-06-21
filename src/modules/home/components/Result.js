@@ -17,7 +17,6 @@ const Result = ({result}) => {
 		<Card
 			hoverable
 			className="result"
-			style={{ width: 240 }}
 			cover={<img
 				className="cover"
 				alt="cover"

@@ -10,13 +10,13 @@ import './Results.scss';
 
 export class Results extends React.Component {
 
-	paginationOnChange = (page) => {
+	paginationOnChange = (page, pageSize) => {
 		const {params, search} = this.props;
-		search(params, page);
+		search(params, page, pageSize);
 	}
 
 	render() {
-		const {searching, results, searchSuccess, page} = this.props;
+		const {searching, results, searchSuccess, page, pageSize} = this.props;
 		let total;
 		if (results) {
 			const {numFound} = results;
@@ -63,8 +63,11 @@ export class Results extends React.Component {
 				searchSuccess && results.docs.length ?
 					<div className="pagination-wrapper">
 						<Pagination
-							pageSize={100} total={total} current={page}
-							onChange={(page) => this.paginationOnChange(page)}
+							showSizeChanger
+							pageSize={pageSize} total={total} current={page}
+							pageSizeOptions={['10', '20', '50', '100']}
+							onChange={(page, pageSize) => this.paginationOnChange(page, pageSize)}
+							onShowSizeChange={(current, size) => this.paginationOnChange(current, size)}
 						/>
 					</div>
 					: null
@@ -74,12 +77,12 @@ export class Results extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	const {searched, searching, results, searchSuccess, page, params} = state.search;
-	return {searched, searching, results, searchSuccess, page, params};
+	const {searched, searching, results, searchSuccess, page, pageSize, params} = state.search;
+	return {searched, searching, results, searchSuccess, page, pageSize, params};
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {search: (params, page) => dispatch(search(params, page))};
+	return {search: (params, page, pageSize) => dispatch(search(params, page, pageSize))};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Results);

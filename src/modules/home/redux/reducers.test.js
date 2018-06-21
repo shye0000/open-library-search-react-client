@@ -29,11 +29,13 @@ describe('search reducers', () => {
 		expect(reducers(oldState, {
 			type: SEARCHING,
 			page: 1,
+			pageSize: 20,
 			params: {},
 		})).toEqual({
 			...oldState,
 			searching: true,
 			page: 1,
+			pageSize: 20,
 			params: {},
 		});
 	});

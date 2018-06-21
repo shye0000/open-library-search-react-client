@@ -16,11 +16,12 @@ const reducers = (state = initialState, action) => {
 			};
 		}
 		case SEARCHING: {
-			const {page, params} = action;
+			const {page, params, pageSize} = action;
 			return {
 				...state,
 				searching: true,
 				page,
+				pageSize,
 				params,
 			};
 		}

@@ -17,7 +17,7 @@ describe('fetch root action', () => {
 
 		const expectedResults = {test: 'data'};
 
-		fetchMock.getOnce('https://openlibrary.org/search.json?page=1', {
+		fetchMock.getOnce('https://openlibrary.org/search.json?page=1&limit=20', {
 			body: expectedResults,
 			headers: { 'content-type': 'application/json' }
 		});
@@ -27,6 +27,7 @@ describe('fetch root action', () => {
 			{ type: SEARCHING,
 				page: 1,
 				params: undefined,
+				pageSize: 20,
 			},
 			{ type: SEARCH_SUCCESS,
 				results: expectedResults,
