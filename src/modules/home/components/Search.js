@@ -3,14 +3,21 @@ import {connect} from 'react-redux';
 import Input from 'antd/lib/input';
 import Select from 'antd/lib/select';
 import Form from 'antd/lib/form';
-import Button from 'antd/lib/button';
+import debounce from 'lodash.debounce';
 import {search} from '../redux/actions';
 import './Search.scss';
 
 export class Search extends React.Component {
 
+	constructor(props) {
+		super(props);
+		this.searchValueOnChange = debounce(this.searchValueOnChange, 500);
+	}
+
 	handleSubmit = (ev) => {
-		ev.preventDefault();
+		if (ev) {
+			ev.preventDefault();
+		}
 		const {form, search} = this.props;
 		form.validateFields((err, values) => {
 			if (err) {
@@ -20,8 +27,24 @@ export class Search extends React.Component {
 		});
 	}
 
+	queryParamOnChange = (value) => {
+		const {form} = this.props;
+		const searchValue = form.getFieldValue('searchValue');
+		if (value && searchValue) {
+			this.handleSubmit();
+		}
+	}
+
+	searchValueOnChange = (value) => {
+		const {form} = this.props;
+		const queryParam = form.getFieldValue('queryParam');
+		if (value && queryParam) {
+			this.handleSubmit();
+		}
+	}
+
 	render() {
-		const {searched, searching} = this.props;
+		const {searched} = this.props;
 		const FormItem = Form.Item;
 		const { getFieldDecorator } = this.props.form;
 		const Option = Select.Option;
@@ -36,7 +59,11 @@ export class Search extends React.Component {
 						rules: [{required: true, message: 'Field required' }],
 						initialValue: 'q'
 					})(
-						<Select size={size} style={{width: '100px'}} disabled={searching} >
+						<Select
+							size={size}
+							style={{width: '100px'}}
+							onChange={(value) => this.queryParamOnChange(value)}
+						>
 							<Option value="q">All</Option>
 							<Option value="title">Title</Option>
 							<Option value="author">Author</Option>
@@ -47,7 +74,12 @@ export class Search extends React.Component {
 					{getFieldDecorator('searchValue', {
 						rules: [{required: true, message: 'Field required' }],
 					})(
-						<Input placeholder="Tape something ..." style={{width: '300px'}} size={size}  disabled={searching} />
+						<Input
+							placeholder="Tape something ..."
+							style={{width: '300px'}}
+							size={size}
+							onChange={(value) => this.searchValueOnChange(value)}
+						/>
 					)}
 				</FormItem>
 			</div>
@@ -56,8 +88,8 @@ export class Search extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	const {searched, searching} = state.search;
-	return {searched, searching};
+	const {searched} = state.search;
+	return {searched};
 };
 
 const mapDispatchToProps = (dispatch) => {

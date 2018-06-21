@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Card from 'antd/lib/card';
 import './Result.scss';
 
@@ -10,18 +11,27 @@ const Result = ({result}) => {
 		cover_i,
 		key
 	} = result;
-	// const id = key.replace('/works/', '');
 	const { Meta } = Card;
-	return <Card
-		hoverable
-		style={{ width: 240 }}
-		cover={<img alt="cover" src={`https://covers.openlibrary.org/w/id/${cover_i}.jpg`} />}
-	>
-		<Meta
-			title="Europe Street beat"
-			description="www.instagram.com"
-		/>
-	</Card>;
+	const resultId = key.replace('/works/', '');
+	return <Link to={`/book/${resultId}`}>
+		<Card
+			hoverable
+			className="result"
+			style={{ width: 240 }}
+			cover={<img
+				className="cover"
+				alt="cover"
+				align="middle"
+				src={`https://covers.openlibrary.org/w/id/${cover_i}.jpg`}
+			/>}
+		>
+			<Meta title={first_publish_year ? first_publish_year : 'unknown'} />
+			<Meta
+				title={title}
+				description={author_name ? author_name.join(', ') : ' '}
+			/>
+		</Card>
+	</Link>;
 };
 
 export default Result;

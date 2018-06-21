@@ -8,8 +8,7 @@ import './HomePage.scss';
 export class HomePage extends React.Component {
 
 	render() {
-		const {searched, searching, searchSuccess, results} = this.props;
-		console.log(searched, searching, searchSuccess, results);
+		const {searched} = this.props;
 		return (
 			<div className="home">
 				<div className={classNames('search-wrapper',{
@@ -20,7 +19,7 @@ export class HomePage extends React.Component {
 				{
 					searched ?
 						<div className="results-wrapper">
-							<Results results={results}/>
+							<Results />
 						</div> : null
 				}
 			</div>
@@ -29,8 +28,8 @@ export class HomePage extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	const {searched, searching, searchSuccess, results} = state.search;
-	return {searched, searching, searchSuccess, results};
+	const {searched} = state.search;
+	return {searched};
 };
 
 export default connect(mapStateToProps, null)(HomePage);

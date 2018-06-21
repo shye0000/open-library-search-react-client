@@ -1,0 +1,11 @@
+@import "../../../styles/vars";
+.results {
+  .result {
+    margin-bottom: $lg-padding;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pagination-wrapper {
+    text-align: right;
+  }
+}

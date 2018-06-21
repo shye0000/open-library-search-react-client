@@ -14,9 +14,10 @@
       width: 100%;
       transform: none;
       border-bottom: 1px solid $light-grey;
+      box-shadow: 0 0 11px rgba(0, 0, 0, 0.23);
     }
   }
   .results-wrapper {
-    padding: $sm-padding;
+    padding: $lg-padding $sm-padding;
   }
 }

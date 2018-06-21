@@ -31,7 +31,7 @@ describe('search reducers', () => {
 			searching: true
 		});
 	});
-	it('SEARCH_SUCCESS : new state should has searching "false", searchSuccess "true" and new results', () => {
+	it('SEARCH_SUCCESS : new state should has searching "false", searchSuccess "true" and new results, and page and params', () => {
 		const oldState = {
 			searching: true,
 			searchSuccess: false,
@@ -39,12 +39,16 @@ describe('search reducers', () => {
 		};
 		expect(reducers(oldState, {
 			type: SEARCH_SUCCESS,
-			results: {}
+			results: {},
+			page: 1,
+			params: {}
 		})).toEqual({
 			...oldState,
 			searching: false,
 			searchSuccess: true,
-			results: {}
+			results: {},
+			page: 1,
+			params: {}
 		});
 	});
 	it('SEARCH_FAIL : new state should has searching "false", searchingSuccess "false"', () => {

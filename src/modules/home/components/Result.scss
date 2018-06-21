@@ -1,0 +1,25 @@
+@import "../../../styles/colors";
+.result {
+  .ant-card-cover {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: $background-grey;
+    overflow: hidden;
+    img.cover {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+  }
+  .ant-card-meta-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 21px;
+    line-height: 21px;
+  }
+}

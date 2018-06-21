@@ -17,5 +17,7 @@
     line-height: 40px;
     text-align: right;
     border-top: 1px solid $light-grey;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.23);
+    z-index: 1;
   }
 }
