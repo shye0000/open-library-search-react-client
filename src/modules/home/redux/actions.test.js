@@ -24,11 +24,12 @@ describe('fetch root action', () => {
 
 		const expectedActions = [
 			{ type: SEARCHED },
-			{ type: SEARCHING },
-			{ type: SEARCH_SUCCESS,
-				results: expectedResults,
+			{ type: SEARCHING,
 				page: 1,
 				params: undefined,
+			},
+			{ type: SEARCH_SUCCESS,
+				results: expectedResults,
 			}
 		];
 		const store = mockStore({ root: [] });

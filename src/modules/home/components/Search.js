@@ -57,7 +57,6 @@ export class Search extends React.Component {
 				<FormItem>
 					{getFieldDecorator('queryParam', {
 						rules: [{required: true, message: 'Field required' }],
-						initialValue: 'q'
 					})(
 						<Select
 							size={size}
@@ -88,14 +87,27 @@ export class Search extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	const {searched} = state.search;
-	return {searched};
+	const {searched, params} = state.search;
+	return {searched, params};
 };
 
 const mapDispatchToProps = (dispatch) => {
 	return {search: (params) => dispatch(search(params))};
 };
 
-const SearchForm = Form.create()(Search);
+
+const SearchForm = Form.create({
+	mapPropsToFields(props) {
+		const {params} = props;
+		return {
+			queryParam: Form.createFormField({
+				value: params ? params.queryParam : 'q',
+			}),
+			searchValue: Form.createFormField({
+				value: params ? params.searchValue : undefined,
+			}),
+		};
+	},
+})(Search);
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);

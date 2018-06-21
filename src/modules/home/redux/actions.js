@@ -8,7 +8,7 @@ export const SEARCHED = 'SEARCHED';
 export const search = (params, page = 1) => {
 	return (dispatch) => {
 		dispatch(searched());
-		dispatch(searching());
+		dispatch(searching(page, params));
 		let query = {page: page};
 		if (params) {
 			query = {
@@ -19,7 +19,7 @@ export const search = (params, page = 1) => {
 		const queryString = parseObjToQueryString(query);
 		return fetch(`https://openlibrary.org/search.json${queryString ? `?${queryString}` : ''}`)
 			.then(resp => resp.json())
-			.then((results) => dispatch(searchSuccess(results, page, params)))
+			.then((results) => dispatch(searchSuccess(results)))
 			.catch(error => {
 				dispatch(searchFail());
 				throw(error);
@@ -33,18 +33,18 @@ const searched = () => {
 	};
 };
 
-const searching = () => {
+const searching = (page, params) => {
 	return {
-		type: SEARCHING
+		type: SEARCHING,
+		page,
+		params,
 	};
 };
 
-const searchSuccess = (results, page, params) => {
+const searchSuccess = (results) => {
 	return {
 		type: SEARCH_SUCCESS,
 		results,
-		page,
-		params
 	};
 };
 
