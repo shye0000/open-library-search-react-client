@@ -7,7 +7,7 @@ import fetchMock from 'fetch-mock';
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
-describe('fetch root action', () => {
+describe('search actions', () => {
 	afterEach(() => {
 		fetchMock.reset();
 		fetchMock.restore();
@@ -39,4 +39,5 @@ describe('fetch root action', () => {
 			expect(store.getActions()).toEqual(expectedActions);
 		});
 	});
+
 });
