@@ -9,11 +9,6 @@ import './Search.scss';
 
 export class Search extends React.Component {
 
-	constructor(props) {
-		super(props);
-		this.searchValueOnChange = debounce(this.searchValueOnChange, 500);
-	}
-
 	handleSubmit = (ev) => {
 		if (ev) {
 			ev.preventDefault();
@@ -23,24 +18,9 @@ export class Search extends React.Component {
 			if (err) {
 				return;
 			}
-			search(values);
+			const {queryParam, searchValue} = values;
+			search(queryParam, searchValue);
 		});
-	}
-
-	queryParamOnChange = (value) => {
-		const {form} = this.props;
-		const searchValue = form.getFieldValue('searchValue');
-		if (value && searchValue) {
-			this.handleSubmit();
-		}
-	}
-
-	searchValueOnChange = (value) => {
-		const {form} = this.props;
-		const queryParam = form.getFieldValue('queryParam');
-		if (value && queryParam) {
-			this.handleSubmit();
-		}
 	}
 
 	render() {
@@ -61,7 +41,6 @@ export class Search extends React.Component {
 						<Select
 							size={size}
 							style={{width: '100px'}}
-							onChange={(value) => this.queryParamOnChange(value)}
 						>
 							<Option value="q">All</Option>
 							<Option value="title">Title</Option>
@@ -77,7 +56,6 @@ export class Search extends React.Component {
 							placeholder="Tape something ..."
 							style={{width: '300px'}}
 							size={size}
-							onChange={(value) => this.searchValueOnChange(value)}
 						/>
 					)}
 				</FormItem>
@@ -87,27 +65,45 @@ export class Search extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	const {searched, params} = state.search;
-	return {searched, params};
+	const {searched, queryParam, searchValue} = state.search;
+	return {searched, queryParam, searchValue};
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {search: (params) => dispatch(search(params))};
+	return {search: (queryParam, searchValue) => dispatch(search(queryParam, searchValue))};
 };
 
 
 const SearchForm = Form.create({
 	mapPropsToFields(props) {
-		const {params} = props;
+		const {queryParam, searchValue} = props;
 		return {
 			queryParam: Form.createFormField({
-				value: params ? params.queryParam : 'q',
+				value: queryParam || 'q',
 			}),
 			searchValue: Form.createFormField({
-				value: params ? params.searchValue : undefined,
+				value: searchValue || undefined,
 			}),
 		};
 	},
+	onValuesChange(props, changedValues, allValues) {
+		const {search} = props;
+		const changedField = Object.keys(changedValues)[0];
+		if (changedField === 'queryParam') {
+			valuesOnChange(allValues, search);
+		} else if (changedField === 'searchValue') {
+			debouncedValuesOnChange(allValues, search);
+		}
+	}
 })(Search);
+
+const valuesOnChange = (values, search) => {
+	const {queryParam, searchValue} = values;
+	if (searchValue && queryParam) {
+		search(queryParam, searchValue);
+	}
+};
+
+const debouncedValuesOnChange = debounce(valuesOnChange, 500);
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);

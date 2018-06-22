@@ -5,18 +5,18 @@ export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
 export const SEARCH_FAIL = 'SEARCH_FAIL';
 export const SEARCHED = 'SEARCHED';
 
-export const search = (params, page = 1, pageSize = 20) => {
+export const search = (queryParam = 'q', searchValue = undefined, page = 1, pageSize = 20) => {
 	return (dispatch) => {
 		dispatch(searched());
-		dispatch(searching(page, params, pageSize));
+		dispatch(searching(queryParam, searchValue, page, pageSize));
 		let query = {
 			page,
 			limit: pageSize,
 		};
-		if (params) {
+		if (queryParam && searchValue) {
 			query = {
 				...query,
-				[params.queryParam]: params.searchValue
+				[queryParam]: searchValue
 			};
 		}
 		const queryString = parseObjToQueryString(query);
@@ -36,12 +36,13 @@ const searched = () => {
 	};
 };
 
-const searching = (page, params, pageSize) => {
+const searching = (queryParam, searchValue, page, pageSize) => {
 	return {
 		type: SEARCHING,
 		page,
 		pageSize,
-		params,
+		queryParam,
+		searchValue,
 	};
 };
 

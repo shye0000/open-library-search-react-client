@@ -11,8 +11,8 @@ import './Results.scss';
 export class Results extends React.Component {
 
 	paginationOnChange = (page, pageSize) => {
-		const {params, search} = this.props;
-		search(params, page, pageSize);
+		const {searchValue, queryParam, search} = this.props;
+		search(queryParam, searchValue, page, pageSize);
 	}
 
 	render() {
@@ -77,12 +77,12 @@ export class Results extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	const {searched, searching, results, searchSuccess, page, pageSize, params} = state.search;
-	return {searched, searching, results, searchSuccess, page, pageSize, params};
+	const {searched, searching, results, searchSuccess, page, pageSize, searchValue, queryParam} = state.search;
+	return {searched, searching, results, searchSuccess, page, pageSize, searchValue, queryParam};
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {search: (params, page, pageSize) => dispatch(search(params, page, pageSize))};
+	return {search: (queryParam, searchValue, page, pageSize) => dispatch(search(queryParam, searchValue, page, pageSize))};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Results);

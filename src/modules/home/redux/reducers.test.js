@@ -20,7 +20,7 @@ describe('search reducers', () => {
 			searched: true
 		});
 	});
-	it('SEARCHING : new state should has searching "true" and page and params', () => {
+	it('SEARCHING : new state should has searching "true" and page, queryParam and searchValue', () => {
 		const oldState = {
 			searching: false,
 			searchSuccess: true,
@@ -30,13 +30,15 @@ describe('search reducers', () => {
 			type: SEARCHING,
 			page: 1,
 			pageSize: 20,
-			params: {},
+			queryParam: 'q',
+			searchValue: 'test'
 		})).toEqual({
 			...oldState,
 			searching: true,
 			page: 1,
 			pageSize: 20,
-			params: {},
+			queryParam: 'q',
+			searchValue: 'test'
 		});
 	});
 	it('SEARCH_SUCCESS : new state should has searching "false", searchSuccess "true" and new results', () => {
