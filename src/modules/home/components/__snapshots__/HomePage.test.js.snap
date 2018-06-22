@@ -5,9 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <HomePage
-    fetchSuccess={false}
-    fetching={false}
-    root={null}
+    searched={true}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,11 +21,15 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="search-wrapper"
+          className="search-wrapper searched"
         >
           <Connect(Form(Search)) />
         </div>,
-        null,
+        <div
+          className="results-wrapper"
+        >
+          <Connect(Results) />
+        </div>,
       ],
       "className": "home",
     },
@@ -39,7 +41,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Connect(Form(Search)) />,
-          "className": "search-wrapper",
+          "className": "search-wrapper searched",
         },
         "ref": null,
         "rendered": Object {
@@ -53,7 +55,26 @@ ShallowWrapper {
         },
         "type": "div",
       },
-      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(Results) />,
+          "className": "results-wrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
     ],
     "type": "div",
   },
@@ -65,11 +86,15 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="search-wrapper"
+            className="search-wrapper searched"
           >
             <Connect(Form(Search)) />
           </div>,
-          null,
+          <div
+            className="results-wrapper"
+          >
+            <Connect(Results) />
+          </div>,
         ],
         "className": "home",
       },
@@ -81,7 +106,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Connect(Form(Search)) />,
-            "className": "search-wrapper",
+            "className": "search-wrapper searched",
           },
           "ref": null,
           "rendered": Object {
@@ -95,7 +120,26 @@ ShallowWrapper {
           },
           "type": "div",
         },
-        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(Results) />,
+            "className": "results-wrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
       ],
       "type": "div",
     },

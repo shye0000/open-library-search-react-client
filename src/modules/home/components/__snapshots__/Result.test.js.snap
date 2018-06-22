@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Result
+    result={
+      Object {
+        "author_name": Array [
+          "author_name_1",
+          "author_name_2",
+        ],
+        "cover_i": "COVER_I",
+        "first_publish_year": 2018,
+        "key": "key",
+        "title": "title",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Card
+        className="result"
+        cover={
+          <img
+            align="middle"
+            alt="cover"
+            className="cover"
+            src="https://covers.openlibrary.org/w/id/COVER_I.jpg"
+          />
+        }
+        hoverable={true}
+      >
+        <Unknown
+          title={2018}
+        />
+        <Unknown
+          description="author_name_1, author_name_2"
+          title="title"
+        />
+      </Card>,
+      "replace": false,
+      "to": "/book/key",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Unknown
+            title={2018}
+          />,
+          <Unknown
+            description="author_name_1, author_name_2"
+            title="title"
+          />,
+        ],
+        "className": "result",
+        "cover": <img
+          align="middle"
+          alt="cover"
+          className="cover"
+          src="https://covers.openlibrary.org/w/id/COVER_I.jpg"
+        />,
+        "hoverable": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "title": 2018,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "description": "author_name_1, author_name_2",
+            "title": "title",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Card
+          className="result"
+          cover={
+            <img
+              align="middle"
+              alt="cover"
+              className="cover"
+              src="https://covers.openlibrary.org/w/id/COVER_I.jpg"
+            />
+          }
+          hoverable={true}
+        >
+          <Unknown
+            title={2018}
+          />
+          <Unknown
+            description="author_name_1, author_name_2"
+            title="title"
+          />
+        </Card>,
+        "replace": false,
+        "to": "/book/key",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Unknown
+              title={2018}
+            />,
+            <Unknown
+              description="author_name_1, author_name_2"
+              title="title"
+            />,
+          ],
+          "className": "result",
+          "cover": <img
+            align="middle"
+            alt="cover"
+            className="cover"
+            src="https://covers.openlibrary.org/w/id/COVER_I.jpg"
+          />,
+          "hoverable": true,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "title": 2018,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "description": "author_name_1, author_name_2",
+              "title": "title",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,4092 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Results
+    page={1}
+    pageSize={10}
+    queryParam="q"
+    results={
+      Object {
+        "docs": Array [
+          Object {
+            "key": 1,
+          },
+          Object {
+            "key": 2,
+          },
+          Object {
+            "key": 3,
+          },
+          Object {
+            "key": 4,
+          },
+          Object {
+            "key": 5,
+          },
+          Object {
+            "key": 6,
+          },
+          Object {
+            "key": 7,
+          },
+          Object {
+            "key": 8,
+          },
+          Object {
+            "key": 9,
+          },
+          Object {
+            "key": 10,
+          },
+        ],
+        "numFound": 20,
+      }
+    }
+    search={[MockFunction]}
+    searchSuccess={true}
+    searchValue="test"
+    searching={false}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="results-body"
+        >
+          <Spin
+            prefixCls="ant-spin"
+            size="default"
+            spinning={false}
+            wrapperClassName=""
+          >
+            <Row
+              align="top"
+              gutter={20}
+              type="flex"
+            >
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 1,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 2,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 3,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 4,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 5,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 6,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 7,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 8,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 9,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 10,
+                    }
+                  }
+                />
+              </Col>
+            </Row>
+          </Spin>
+        </div>,
+        <div
+          className="pagination-wrapper"
+        >
+          <Pagination
+            current={1}
+            onChange={[Function]}
+            onShowSizeChange={[Function]}
+            pageSize={10}
+            pageSizeOptions={
+              Array [
+                "10",
+                "20",
+                "50",
+                "100",
+              ]
+            }
+            prefixCls="ant-pagination"
+            selectPrefixCls="ant-select"
+            showSizeChanger={true}
+            total={20}
+          />
+        </div>,
+      ],
+      "className": "results",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Spin
+            prefixCls="ant-spin"
+            size="default"
+            spinning={false}
+            wrapperClassName=""
+          >
+            <Row
+              align="top"
+              gutter={20}
+              type="flex"
+            >
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 1,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 2,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 3,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 4,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 5,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 6,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 7,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 8,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 9,
+                    }
+                  }
+                />
+              </Col>
+              <Col
+                lg={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                md={
+                  Object {
+                    "span": 8,
+                  }
+                }
+                sm={
+                  Object {
+                    "span": 12,
+                  }
+                }
+                xl={
+                  Object {
+                    "span": 6,
+                  }
+                }
+                xs={
+                  Object {
+                    "span": 24,
+                  }
+                }
+              >
+                <Result
+                  result={
+                    Object {
+                      "key": 10,
+                    }
+                  }
+                />
+              </Col>
+            </Row>
+          </Spin>,
+          "className": "results-body",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Row
+                align="top"
+                gutter={20}
+                type="flex"
+              >
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 1,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 2,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 3,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 4,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 5,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 6,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 7,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 8,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 9,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 10,
+                      }
+                    }
+                  />
+                </Col>
+              </Row>,
+              null,
+              null,
+            ],
+            "prefixCls": "ant-spin",
+            "size": "default",
+            "spinning": false,
+            "wrapperClassName": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "align": "top",
+                "children": Array [
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 1,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 2,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 3,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 4,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 5,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 6,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 7,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 8,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 9,
+                        }
+                      }
+                    />
+                  </Col>,
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 10,
+                        }
+                      }
+                    />
+                  </Col>,
+                ],
+                "gutter": 20,
+                "type": "flex",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 1,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 1,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 2,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 2,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "3",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 3,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 3,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "4",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 4,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 4,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "5",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 5,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 5,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "6",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 6,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 6,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "7",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 7,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 7,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "8",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 8,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 8,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "9",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 9,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 9,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "10",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Result
+                      result={
+                        Object {
+                          "key": 10,
+                        }
+                      }
+                    />,
+                    "lg": Object {
+                      "span": 8,
+                    },
+                    "md": Object {
+                      "span": 8,
+                    },
+                    "sm": Object {
+                      "span": 12,
+                    },
+                    "xl": Object {
+                      "span": 6,
+                    },
+                    "xs": Object {
+                      "span": 24,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "result": Object {
+                        "key": 10,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            null,
+            null,
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Pagination
+            current={1}
+            onChange={[Function]}
+            onShowSizeChange={[Function]}
+            pageSize={10}
+            pageSizeOptions={
+              Array [
+                "10",
+                "20",
+                "50",
+                "100",
+              ]
+            }
+            prefixCls="ant-pagination"
+            selectPrefixCls="ant-select"
+            showSizeChanger={true}
+            total={20}
+          />,
+          "className": "pagination-wrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "current": 1,
+            "onChange": [Function],
+            "onShowSizeChange": [Function],
+            "pageSize": 10,
+            "pageSizeOptions": Array [
+              "10",
+              "20",
+              "50",
+              "100",
+            ],
+            "prefixCls": "ant-pagination",
+            "selectPrefixCls": "ant-select",
+            "showSizeChanger": true,
+            "total": 20,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="results-body"
+          >
+            <Spin
+              prefixCls="ant-spin"
+              size="default"
+              spinning={false}
+              wrapperClassName=""
+            >
+              <Row
+                align="top"
+                gutter={20}
+                type="flex"
+              >
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 1,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 2,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 3,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 4,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 5,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 6,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 7,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 8,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 9,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 10,
+                      }
+                    }
+                  />
+                </Col>
+              </Row>
+            </Spin>
+          </div>,
+          <div
+            className="pagination-wrapper"
+          >
+            <Pagination
+              current={1}
+              onChange={[Function]}
+              onShowSizeChange={[Function]}
+              pageSize={10}
+              pageSizeOptions={
+                Array [
+                  "10",
+                  "20",
+                  "50",
+                  "100",
+                ]
+              }
+              prefixCls="ant-pagination"
+              selectPrefixCls="ant-select"
+              showSizeChanger={true}
+              total={20}
+            />
+          </div>,
+        ],
+        "className": "results",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Spin
+              prefixCls="ant-spin"
+              size="default"
+              spinning={false}
+              wrapperClassName=""
+            >
+              <Row
+                align="top"
+                gutter={20}
+                type="flex"
+              >
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 1,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 2,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 3,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 4,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 5,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 6,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 7,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 8,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 9,
+                      }
+                    }
+                  />
+                </Col>
+                <Col
+                  lg={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  md={
+                    Object {
+                      "span": 8,
+                    }
+                  }
+                  sm={
+                    Object {
+                      "span": 12,
+                    }
+                  }
+                  xl={
+                    Object {
+                      "span": 6,
+                    }
+                  }
+                  xs={
+                    Object {
+                      "span": 24,
+                    }
+                  }
+                >
+                  <Result
+                    result={
+                      Object {
+                        "key": 10,
+                      }
+                    }
+                  />
+                </Col>
+              </Row>
+            </Spin>,
+            "className": "results-body",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Row
+                  align="top"
+                  gutter={20}
+                  type="flex"
+                >
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 1,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 2,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 3,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 4,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 5,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 6,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 7,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 8,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 9,
+                        }
+                      }
+                    />
+                  </Col>
+                  <Col
+                    lg={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    md={
+                      Object {
+                        "span": 8,
+                      }
+                    }
+                    sm={
+                      Object {
+                        "span": 12,
+                      }
+                    }
+                    xl={
+                      Object {
+                        "span": 6,
+                      }
+                    }
+                    xs={
+                      Object {
+                        "span": 24,
+                      }
+                    }
+                  >
+                    <Result
+                      result={
+                        Object {
+                          "key": 10,
+                        }
+                      }
+                    />
+                  </Col>
+                </Row>,
+                null,
+                null,
+              ],
+              "prefixCls": "ant-spin",
+              "size": "default",
+              "spinning": false,
+              "wrapperClassName": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "align": "top",
+                  "children": Array [
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 1,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 2,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 3,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 4,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 5,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 6,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 7,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 8,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 9,
+                          }
+                        }
+                      />
+                    </Col>,
+                    <Col
+                      lg={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      md={
+                        Object {
+                          "span": 8,
+                        }
+                      }
+                      sm={
+                        Object {
+                          "span": 12,
+                        }
+                      }
+                      xl={
+                        Object {
+                          "span": 6,
+                        }
+                      }
+                      xs={
+                        Object {
+                          "span": 24,
+                        }
+                      }
+                    >
+                      <Result
+                        result={
+                          Object {
+                            "key": 10,
+                          }
+                        }
+                      />
+                    </Col>,
+                  ],
+                  "gutter": 20,
+                  "type": "flex",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "1",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 1,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 1,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "2",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 2,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 2,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "3",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 3,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 3,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "4",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 4,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 4,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "5",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 5,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 5,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "6",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 6,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 6,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "7",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 7,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 7,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "8",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 8,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 8,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "9",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 9,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 9,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "10",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Result
+                        result={
+                          Object {
+                            "key": 10,
+                          }
+                        }
+                      />,
+                      "lg": Object {
+                        "span": 8,
+                      },
+                      "md": Object {
+                        "span": 8,
+                      },
+                      "sm": Object {
+                        "span": 12,
+                      },
+                      "xl": Object {
+                        "span": 6,
+                      },
+                      "xs": Object {
+                        "span": 24,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "result": Object {
+                          "key": 10,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              null,
+              null,
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Pagination
+              current={1}
+              onChange={[Function]}
+              onShowSizeChange={[Function]}
+              pageSize={10}
+              pageSizeOptions={
+                Array [
+                  "10",
+                  "20",
+                  "50",
+                  "100",
+                ]
+              }
+              prefixCls="ant-pagination"
+              selectPrefixCls="ant-select"
+              showSizeChanger={true}
+              total={20}
+            />,
+            "className": "pagination-wrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "current": 1,
+              "onChange": [Function],
+              "onShowSizeChange": [Function],
+              "pageSize": 10,
+              "pageSizeOptions": Array [
+                "10",
+                "20",
+                "50",
+                "100",
+              ],
+              "prefixCls": "ant-pagination",
+              "selectPrefixCls": "ant-select",
+              "showSizeChanger": true,
+              "total": 20,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

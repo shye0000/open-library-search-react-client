@@ -49,12 +49,12 @@ export class Results extends React.Component {
 					}
 					{
 						searchSuccess && !results.docs.length ?
-							<div>Found nothing ...</div>
+							<div className="not-found">Found nothing ...</div>
 							: null
 					}
 					{
 						!searchSuccess && !searching ?
-							<div>Search failed ...</div>
+							<div className="search-failed">Search failed ...</div>
 							: null
 					}
 				</Spin>
@@ -77,8 +77,8 @@ export class Results extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	const {searched, searching, results, searchSuccess, page, pageSize, searchValue, queryParam} = state.search;
-	return {searched, searching, results, searchSuccess, page, pageSize, searchValue, queryParam};
+	const {searching, results, searchSuccess, page, pageSize, searchValue, queryParam} = state.search;
+	return {searching, results, searchSuccess, page, pageSize, searchValue, queryParam};
 };
 
 const mapDispatchToProps = (dispatch) => {

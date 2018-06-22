@@ -75,7 +75,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 
-const SearchForm = Form.create({
+export const SearchForm = Form.create({
 	mapPropsToFields(props) {
 		const {queryParam, searchValue} = props;
 		return {
