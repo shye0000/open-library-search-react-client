@@ -28,6 +28,7 @@ export class Search extends React.Component {
 		const FormItem = Form.Item;
 		const { getFieldDecorator } = this.props.form;
 		const Option = Select.Option;
+		const Search = Input.Search;
 		const size = searched ? undefined : 'large';
 		return <Form
 			className="search"
@@ -52,7 +53,8 @@ export class Search extends React.Component {
 					{getFieldDecorator('searchValue', {
 						rules: [{required: true, message: 'Field required' }],
 					})(
-						<Input
+						<Search
+							enterButton={!searched}
 							placeholder="Tape something ..."
 							style={{width: '300px'}}
 							size={size}
