@@ -1,9 +1,14 @@
 @import "../../../styles/colors";
 @import "../../../styles/vars";
 .search {
+  min-width: 300px;
   .search-inner {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    .search-value-field {
+      flex: 1;
+      max-width: 300px;
+    }
   }
 }

@@ -49,14 +49,13 @@ export class Search extends React.Component {
 						</Select>
 					)}
 				</FormItem>
-				<FormItem>
+				<FormItem className="search-value-field">
 					{getFieldDecorator('searchValue', {
 						rules: [{required: true, message: 'Field required' }],
 					})(
 						<Search
 							enterButton={!searched}
 							placeholder="Tape something ..."
-							style={{width: '300px'}}
 							size={size}
 						/>
 					)}
